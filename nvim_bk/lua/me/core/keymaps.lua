@@ -1,5 +1,5 @@
 -- set leader key to SPC
-vim.g.mapleader = ","
+vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
@@ -9,6 +9,3 @@ keymap.set("i", "<C-E>", "<END>", { desc = "use C-E to go END" })
 
 keymap.set("n", "U", "C-R", { desc = "use U to undo" })
 keymap.set("n", "K", "i<CR><ESC>", { desc = "use K to break line" })
-
-keymap.set("n", "[b", "<cmd>bp<CR>", { desc = "go to previous buffer" })
-keymap.set("n", "]b", "<cmd>bn<CR>", { desc = "go to next buffer" })
